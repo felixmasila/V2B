@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "724058515818",
+    "firebase_url": "https://virtualbloodbankapp.firebaseio.com",
+    "project_id": "virtualbloodbankapp",
+    "storage_bucket": "virtualbloodbankapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724058515818:android:218c680305bdaf4f",
+        "android_client_info": {
+          "package_name": "com.felixmasila.v2b"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724058515818-5fc33ucm72gpkjcnu7snobiu6e5akumr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsu4YgNAJ7Z5UO8qJgThO5LpgvVUBCJZ8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

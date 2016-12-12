@@ -1,0 +1,104 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:id="@+id/ScrollView01"
+    tools:context="com.felixmasila.v2b.fragment.SearchDonorFragment"
+
+
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#fff">
+
+        <!--  Header  Starts-->
+        <LinearLayout android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip">
+            <!-- Logo Start-->
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Please Fill in search details"
+                android:textAlignment="center" />
+            <!-- Logo Ends -->
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:background="#FFF"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+        </LinearLayout>
+        <!-- Footer Ends -->
+
+        <!-- search Form -->
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_below="@id/header">
+            <!-- Full Name Label -->
+
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/nearestbloodbank"/>
+            <RadioGroup
+                android:id="@+id/bloodbank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/radio_bloodbankyes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes"
+                    android:textColor="@color/colorPrimary"
+                    app:buttonTint="@color/tint_color"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/bloodbankno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no"
+                    app:buttonTint="@color/tint_color"
+                    android:textColor="@color/colorPrimary"/>
+
+
+
+            </RadioGroup>
+            <!-- Register Button -->
+            <Button android:id="@+id/btnRegister"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Submit"
+                android:background="@color/colorPrimaryDark"
+                android:onClick="sendMessage"/>
+
+
+            <!--<Spinner-->
+                <!--android:id="@+id/spinner1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:entries="@array/bloodgrouptypelist"-->
+                <!--android:prompt="@string/blood_group" />-->
+
+        </LinearLayout>
+        <!-- Registration Form Ends -->
+    </RelativeLayout>
+
+</ScrollView>
